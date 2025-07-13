@@ -35,11 +35,40 @@ function SectorsWeServer() {
       para: "We support FMCG businesses by providing fast, agile recruitment solutions tailored to the dynamic nature of this sector, sourcing talent across sales, marketing, supply chain, and production.",
       image: "/images/sectors/6.jpeg",
     },
+
+
     {
       heading: "Healthcare",
       para: "Our healthcare recruitment focuses on sourcing qualified professionals including nurses, technicians, administrators, and support staff, helping healthcare organizations maintain excellent patient care and operational efficiency.",
       image: "/images/sectors/7.jpeg",
     },
+
+    {
+      heading: "Defence Aeroscope",
+      para: "Our Defence AeroScope recruitment focuses on sourcing security-cleared professionals including engineers, technicians, analysts, and support staff, helping defence and aerospace organisations maintain operational precision, compliance, and national safety.",
+      image: "/images/sectors/8.jpeg",
+    },
+
+    {
+      heading: "Maritime & Shipping",
+      para: "Our Maritime & Shipping recruitment focuses on sourcing skilled professionals including marine engineers, logistics coordinators, crew members, and compliance officers, helping shipping companies operate smoothly, safely, and in full regulatory alignment.",
+      image: "/images/sectors/9.jpeg",
+    },
+
+    {
+      heading: "Solar Power & Offshore Wind",
+      para: "Our Solar Power & Offshore Wind recruitment focuses on sourcing specialised talent including engineers, project managers, technicians, and environmental consultants—supporting renewable energy companies in delivering sustainable, efficient, and future-ready energy solutions.",
+      image: "/images/sectors/10.jpeg",
+    },
+    {
+      heading: "Education & Care",
+      para: "Our Education & Care recruitment focuses on sourcing compassionate and qualified professionals including teachers, teaching assistants, caregivers, and support staff—helping institutions and care providers deliver safe, nurturing, and high-quality support to learners and vulnerable individuals.",
+      image: "/images/sectors/11.jpeg",
+    },
+
+
+
+
   ];
   return (
     <>

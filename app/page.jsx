@@ -9,7 +9,6 @@ import ServiceProcess from "@/components/main/home/ServiceProcess";
 import Testimonials from "@/components/main/home/Testimonials";
 import FAQ from "@/components/main/home/FAQ";
 import EventsNetworking from "@/components/main/home/EventsNetworking";
-
 export default function NexCoOutsourcing() {
   const scrollingTexts = [
     "We deliver what we promise.",

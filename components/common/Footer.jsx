@@ -65,7 +65,7 @@ function Footer() {
                   },
                   {
                     icon: <Phone className="w-5 h-5" />,
-                    text: "+44 (0) 20 7123 4567",
+                    text: "+44 (0) 796160600 3",
                   },
                   {
                     icon: <Phone className="w-5 h-5" />,
@@ -178,24 +178,30 @@ function Footer() {
                 © {new Date().getUTCFullYear()} NexCo Outsourcing. All rights
                 reserved.
               </p>
-              <div className="flex gap-x-6 gap-y-2 flex-wrap">
-                {["About Us", "Services", "Sector", "Our Team", "Contact", "Privacy Policy", "Terms & Conditions"].map(
-                  (item, index) => (
-                    <motion.div key={item} whileHover={{ scale: 1.05, y: -2 }}>
-                      <Link
-                        href="#"
-                        className="text-gray-400 hover:text-orange-400 transition-colors relative group"
-                      >
-                        {item}
-                        <motion.div
-                          className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"
-                          layoutId={`footer-policy-${index}`}
-                        />
-                      </Link>
-                    </motion.div>
-                  )
-                )}
-              </div>
+      <div className="flex gap-x-6 gap-y-2 flex-wrap">
+  {[
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Sector", href: "/sector" },
+    { name: "Our Team", href: "/team" },
+    { name: "Contact", href: "/contact" },
+    { name: "Privacy Policy", href: "/privacy-policy" },
+    { name: "Terms & Conditions", href: "/terms" },
+  ].map((item, index) => (
+    <motion.div key={item.name} whileHover={{ scale: 1.05, y: -2 }}>
+      <Link
+        href={item.href}
+        className="text-gray-400 hover:text-orange-400 transition-colors relative group"
+      >
+        {item.name}
+        <motion.div
+          className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"
+          layoutId={`footer-policy-${index}`}
+        />
+      </Link>
+    </motion.div>
+  ))}
+</div>
             </div>
           </motion.div>
         </div>

@@ -58,7 +58,7 @@ function EventsNetworking() {
             className="!h-72 lg:!h-full w-full"
           >
             <div className="relative h-full w-auto rounded-xl overflow-hidden">
-              <Image src="/images/workers.jpeg" fill className="object-cover" />
+              <Image src="/images/net.jpeg" fill className="object-cover" />
             </div>
           </motion.div>
         </div>

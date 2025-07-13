@@ -443,6 +443,7 @@ function Header() {
     { label: "Sectors We Serve", href: "/sectors-we-serve" },
     { label: "Our Team", href: "/our-team" },
     { label: "Contact Us", href: "/contact-us" },
+   // { label: "Contact Us", href: "#" },
   ];
 
   return (
@@ -506,29 +507,39 @@ const DesktopNavigation = ({ navLinks, isServicesOpen, setIsServicesOpen }) => {
                   className="absolute left-0 top-full mt-3 w-[800px] bg-white/90 backdrop-blur-md shadow-xl rounded-xl p-6 grid grid-cols-2 gap-8"
                 >
                  <div>
-  <h4 className="font-bold text-blue-900 mb-2">Recruitment Process Outsourcing</h4>
+  <Link href="/rpo" className="font-bold text-blue-900 mb-2"> Recruitment Process Outsourcing</Link>
   <ul className="space-y-1">
-    <li><Link href="/services#cv-sourcing" className="text-sm text-blue-900 hover:text-orange-500">CV-Sourcing</Link></li>
-    <li><Link href="/services#pre-qualification" className="text-sm text-blue-900 hover:text-orange-500">Pre-Qualification</Link></li>
-    <li><Link href="/services#lead-generation" className="text-sm text-blue-900 hover:text-orange-500">Lead Generation</Link></li>
-    <li><Link href="/services#cv-formatting" className="text-sm text-blue-900 hover:text-orange-500">CV-formatting</Link></li>
+    <li><Link href="/rpo" className="text-sm text-blue-900 hover:text-orange-500">CV-Sourcing</Link></li>
+    <li><Link href="/rpo" className="text-sm text-blue-900 hover:text-orange-500">Pre-Qualification</Link></li>
+    <li><Link href="/rpo" className="text-sm text-blue-900 hover:text-orange-500">Lead Generation</Link></li>
+    <li><Link href="/rpo" className="text-sm text-blue-900 hover:text-orange-500">CV-formatting</Link></li>
   </ul>
 
-  <h4 className="font-bold text-blue-900 mb-2">Web development</h4>
+<Link href="/web-development">
+  <h4 className="font-bold text-blue-900 mb-2 hover:underline">
+    Web development
+  </h4>
+</Link>
+
+
   <ul className="space-y-1">
-    <li><Link href="/services#dev" className="text-sm text-blue-900 hover:text-orange-500">Web development</Link></li>
-    <li><Link href="/services#automation" className="text-sm text-blue-900 hover:text-orange-500">Website automation</Link></li>
-    <li><Link href="/services#ai" className="text-sm text-blue-900 hover:text-orange-500">AI engineering</Link></li>
+    <li><Link href="/web-development" className="text-sm text-blue-900 hover:text-orange-500">Web development</Link></li>
+    <li><Link href="/web-development" className="text-sm text-blue-900 hover:text-orange-500">Website automation</Link></li>
+    <li><Link href="/web-development" className="text-sm text-blue-900 hover:text-orange-500">AI engineering</Link></li>
   </ul>
 
 
  
 
 
+<Link href="/360">
+  <h4 className="font-bold text-blue-900 mb-2 hover:underline">
+360 Recruitment
+  </h4>
+</Link>
 
-  <h4 className="font-bold text-blue-900 mt-4 mb-2">360 Recruitment</h4>
   <ul className="space-y-1">
-    <li><Link href="/services#direct" className="text-sm text-blue-900 hover:text-orange-500">Direct Recruitment</Link></li>
+    <li><Link href="/360" className="text-sm text-blue-900 hover:text-orange-500">Direct Recruitment</Link></li>
   </ul>
 
 
@@ -537,21 +548,31 @@ const DesktopNavigation = ({ navLinks, isServicesOpen, setIsServicesOpen }) => {
 </div>
 
 <div>
- <h4 className="font-bold text-blue-900 mt-4 mb-2">Business Development</h4>
+<Link href="/bd">
+  <h4 className="font-bold text-blue-900 mb-2 hover:underline">
+Business Development
+  </h4>
+</Link>
+
+
   <ul className="space-y-1">
-    <li><Link href="/services#lead-generation" className="text-sm text-blue-900 hover:text-orange-500">Lead Generation</Link></li>
-    <li><Link href="/services#outreach-campaign" className="text-sm text-blue-900 hover:text-orange-500">Outreach campaign</Link></li>
-    <li><Link href="/services#client-support" className="text-sm text-blue-900 hover:text-orange-500">Client relationship support</Link></li>
-    <li><Link href="/services#proposal-assistance" className="text-sm text-blue-900 hover:text-orange-500">Proposal and assistance</Link></li>
-    <li><Link href="/services#admin-support" className="text-sm text-blue-900 hover:text-orange-500">Admin support</Link></li>
+    <li><Link href="/bd" className="text-sm text-blue-900 hover:text-orange-500">Lead Generation</Link></li>
+    <li><Link href="/bd" className="text-sm text-blue-900 hover:text-orange-500">Outreach campaign</Link></li>
+    <li><Link href="/bd" className="text-sm text-blue-900 hover:text-orange-500">Client relationship support</Link></li>
+    <li><Link href="/bd" className="text-sm text-blue-900 hover:text-orange-500">Proposal and assistance</Link></li>
+    <li><Link href="/bd" className="text-sm text-blue-900 hover:text-orange-500">Admin support</Link></li>
   </ul>
 
- 
-  <h4 className="font-bold text-blue-900 mt-4 mb-2">Virtual Assistant</h4>
+
+<Link href="/va">
+  <h4 className="font-bold text-blue-900 mb-2 hover:underline">
+Virtual Assistant
+  </h4>
+</Link>
   <ul className="space-y-1">
-    <li><Link href="/services#drc" className="text-sm text-blue-900 hover:text-orange-500">Dedicated Recruitment Consultant</Link></li>
-    <li><Link href="/services#dbdm" className="text-sm text-blue-900 hover:text-orange-500">Dedicated Business Development Manager</Link></li>
-    <li><Link href="/services#dsmm" className="text-sm text-blue-900 hover:text-orange-500">Dedicated Social Media Manager</Link></li>
+    <li><Link href="/va" className="text-sm text-blue-900 hover:text-orange-500">Dedicated Recruitment Consultant</Link></li>
+    <li><Link href="/va"  className="text-sm text-blue-900 hover:text-orange-500">Dedicated Business Development Manager</Link></li>
+    <li><Link href="/va"  className="text-sm text-blue-900 hover:text-orange-500">Dedicated Social Media Manager</Link></li>
   </ul>
 
 
