@@ -2,41 +2,41 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  FaRegHandshake,
-  FaRocket,
-  FaUserTie,
-  FaCode,
-  FaUsers,
-} from "react-icons/fa";
-import { IoIosArrowForward } from "react-icons/io";
+  Handshake,
+  Rocket,
+  User,
+  Code,
+  Users,
+  ArrowRight,
+} from "lucide-react";
 
 const services = [
   {
-    icon: <FaRegHandshake className="text-[#D3500B] text-2xl" />,
+    icon: <Handshake className="text-[#D3500B] text-2xl" />,
     title: "Recruitment Process Outsourcing",
     description: "End-to-end hiring solutions managed seamlessly.",
     link: "/rpo",
   },
   {
-    icon: <FaRocket className="text-[#D3500B] text-2xl" />,
+    icon: <Rocket className="text-[#D3500B] text-2xl" />,
     title: "Business Development",
     description: "Fuel your pipeline with focused outreach and leads.",
     link: "/bd",
   },
   {
-    icon: <FaUserTie className="text-[#D3500B] text-2xl" />,
+    icon: <User className="text-[#D3500B] text-2xl" />,
     title: "Virtual Assistant",
     description: "Skilled remote professionals dedicated to your tasks.",
     link: "/va",
   },
   {
-    icon: <FaCode className="text-[#D3500B] text-2xl" />,
+    icon: <Code className="text-[#D3500B] text-2xl" />,
     title: "Web Development",
     description: "Modern, responsive websites for brand growth.",
     link: "/web-development",
   },
   {
-    icon: <FaUsers className="text-[#D3500B] text-2xl" />,
+    icon: <Users className="text-[#D3500B] text-2xl" />,
     title: "360 Recruitment",
     description: "Full-cycle recruitment from sourcing to onboarding.",
     link: "/360",
@@ -114,7 +114,7 @@ export default function ServicesSection() {
                       </p>
                     </div>
                   </div>
-                  <IoIosArrowForward className="text-[#E6560C] text-xl" />
+                  <ArrowRight className="text-[#E6560C] text-xl" />
                 </div>
               </Link>
             ))}
