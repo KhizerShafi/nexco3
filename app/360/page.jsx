@@ -472,9 +472,16 @@ const RecruitmentPage = () => {
                 </li>
               ))}
             </ul>
-            <button className="bg-white text-[#008DE2] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
-              Get Started Today
-            </button>
+         <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@nexcooutsourcing.com&su=Inquiry&body=Hi%20NexCo%20Team%2C%0A%0AI%27m%20interested%20in%20your%20services.%20Please%20get%20in%20touch.%0A%0AThanks!"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="bg-white text-[#008DE2] font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+    Get Started Today
+  </button>
+</a>
+
           </div>
         </div>
       </section>

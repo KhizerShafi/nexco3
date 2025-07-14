@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Crown, Briefcase, Award, Globe, Star } from "lucide-react";
+import { Crown, Briefcase, Award, Globe, Star, Mail } from "lucide-react";
 import Image from "next/image";
+
 
 function page() {
   const teamMembers = [
@@ -17,7 +18,8 @@ function page() {
       bgGradient: "from-orange-500/10 via-orange-600/5 to-red-500/10",
       borderGradient: "from-orange-500/50 to-red-500/50",
       experience: "8+ Years",
-      image: "/images/team/hamza.jpeg",
+      image: "/images/team/p1.jpeg",
+      gmail: "hamza.tariq@nexco.com",
     },
     {
       name: "Muhammad Ishraq",
@@ -30,7 +32,8 @@ function page() {
       bgGradient: "from-blue-500/10 via-blue-600/5 to-indigo-500/10",
       borderGradient: "from-blue-500/50 to-indigo-500/50",
       experience: "7+ Years",
-      image: "/images/team/ishraq.jpeg",
+      image: "/images/team/p2.jpeg",
+      gmail: "ishraq@nexco.com",
     },
     {
       name: "Mehvish Asghar",
@@ -43,7 +46,8 @@ function page() {
       bgGradient: "from-purple-500/10 via-purple-600/5 to-pink-500/10",
       borderGradient: "from-purple-500/50 to-pink-500/50",
       experience: "6+ Years",
-      image: "/images/team/mehvish.jpeg",
+      image: "/images/team/p3.jpeg",
+      gmail: "mehvish.asghar@nexco.com",
     },
   ];
 
@@ -200,6 +204,13 @@ function page() {
                     <motion.p className="text-gray-300 leading-relaxed text-lg mb-6 group-hover:text-gray-200 transition-colors duration-300">
                       {member.description}
                     </motion.p>
+{/* Gmail */}
+<div className="flex items-center gap-2 text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
+  <Mail className="w-4 h-4" />
+  <span>{member.gmail}</span>
+</div>
+
+
                   </div>
                 </div>
               </div>
