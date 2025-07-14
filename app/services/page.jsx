@@ -84,7 +84,7 @@ export default function ServicesSection() {
         {/* Service Tabs Section */}
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <FaUsers className="text-[#D3500B] text-2xl" />
+            <Users className="text-[#D3500B] text-2xl" />
             <h2 className="text-[#D3500B] font-bold text-lg uppercase">
               Services
             </h2>
